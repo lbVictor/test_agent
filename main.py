@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/items")
 def read_items():
-    result = n + 1
+    result = 1 + 1
     return {"result": result}
 
 if __name__ == "__main__":
