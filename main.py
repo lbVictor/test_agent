@@ -1,15 +1,1 @@
-from fastapi import FastAPI
-
-app = FastAPI()
-
-
-@app.get("/items")
-def read_items():
-    result = 1 + 1
-    return {"result": result}
-
-
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+from fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/items\")\ndef read_items():\n    some_var = 1 #added some_var\n    result = some_var + 1\n    return {\"result\": result}\n\n\nif __name__ == \"__main__\":\n    import uvicorn\n\n    uvicorn.run(\"main:app\", host=\"127.0.0.1\", port=8000, reload=True)\n
