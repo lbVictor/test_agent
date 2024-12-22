@@ -4,6 +4,7 @@ app = FastAPI()
 
 @app.get("/items")
 def read_items():
+    n = "2"
     result = n + 1
     return {"result": result}
 
