@@ -5,7 +5,8 @@ app = FastAPI()
 
 @app.get("/items")
 def read_items():
-    result = 1 + 1
+    some_var = 10
+    result = 1 + some_var
     return {"result": result}
 
 
